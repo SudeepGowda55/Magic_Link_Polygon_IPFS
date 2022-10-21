@@ -9,7 +9,7 @@ const rpcNetwork = {
     chainId : 80001,
 }
 
-const magic = new Magic("pk_live_52179BC9A9338F97", {
+const magic = new Magic(String(process.env.REACT_APP_MAGIC_PRIVATE_KEY), {
     network : rpcNetwork,
     extensions : [new ConnectExtension()]
 })
