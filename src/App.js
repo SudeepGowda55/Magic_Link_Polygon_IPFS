@@ -15,6 +15,7 @@ const magic = new Magic(String(process.env.REACT_APP_MAGIC_PRIVATE_KEY), {
 })
 
 const provider = new ethers.providers.Web3Provider(magic.rpcProvider);
+
 const web3 = new Web3(magic.rpcProvider);
 
 export default function App() {
